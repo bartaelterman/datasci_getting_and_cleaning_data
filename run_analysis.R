@@ -13,7 +13,8 @@ fnames = featurenames$feature[meansAndStds]
 # Create nice featurenames
 fnamesNoBrackets = sapply(fnames, function(x) {
   a = gsub("\\(\\)", "", x)
-  gsub("-", ".", a)
+  b = gsub("-", ".", a)
+  gsub("([a-zA-Z]{4,})\\1", "\\1", b)
 })
 
 # Read activities

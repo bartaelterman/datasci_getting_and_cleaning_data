@@ -66,11 +66,11 @@ Note that all features are normalized and bounded within [-1, 1].
 - `fBodyGyro.std.Z`: Standard deviation of the fast fourier transformation of the body movement in the Z axis.
 - `fBodyAccMag.mean`: Mean fast fourier transformation of the magnitude of the three dimensional body acceleration.
 - `fBodyAccMag.std`: Standard deviation of the fast fourier transformation of the magnitude of the three dimensional body acceleration.
-- `fBodyBodyAccJerkMag.mean`: Mean fast fourier transformation of the magnitude of the three dimensional body linear acceleration.
-- `fBodyBodyAccJerkMag.std`: Standard deviation of the fast fourier transformation of the magnitude of the three dimensional body linear acceleration.
-- `fBodyBodyGyroMag.mean`: Mean fast fourier transformation of the magnitude of the three dimensional body movement.
-- `fBodyBodyGyroMag.std`: Standard deviation of the fast fourier transformation of the magnitude of the three dimensional body movement.
-- `fBodyBodyGyroJerkMag.mean`: Mean fast fourier transformation of the magnitude of the three dimensional body angular velocity.
-- `fBodyBodyGyroJerkMag.std`: Standard deviation of the fast fourier transformation of the magnitude of the three dimensional body angular velocity.
+- `fBodyAccJerkMag.mean`: Mean fast fourier transformation of the magnitude of the three dimensional body linear acceleration.
+- `fBodyAccJerkMag.std`: Standard deviation of the fast fourier transformation of the magnitude of the three dimensional body linear acceleration.
+- `fBodyGyroMag.mean`: Mean fast fourier transformation of the magnitude of the three dimensional body movement.
+- `fBodyGyroMag.std`: Standard deviation of the fast fourier transformation of the magnitude of the three dimensional body movement.
+- `fBodyGyroJerkMag.mean`: Mean fast fourier transformation of the magnitude of the three dimensional body angular velocity.
+- `fBodyGyroJerkMag.std`: Standard deviation of the fast fourier transformation of the magnitude of the three dimensional body angular velocity.
 - `activity`: activity that the subject was performing. Possibilities are: WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING or LAYING.
 - `subject`: the subject that was performing the activity. In total, data from 30 subjects was collected. These are labeled with a number from 1 to 30.
