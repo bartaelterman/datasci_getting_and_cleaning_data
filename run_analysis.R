@@ -22,7 +22,7 @@ activities = read.table("activity_labels.txt", row.names=1, col.names=c("id", "a
 readData = function(testOrTrain) {
   # set 3 filenames
   datafile = paste(testOrTrain, "/X_", testOrTrain, ".txt", sep="")
-  outcomefile = paste(testOrTrain, "/y_", testOrTrain, ".txt", sep="")
+  activitiesfile = paste(testOrTrain, "/y_", testOrTrain, ".txt", sep="")
   subjectfile = paste(testOrTrain, "/subject_", testOrTrain, ".txt", sep="")
   
   # read data
@@ -34,17 +34,17 @@ readData = function(testOrTrain) {
   # Set nice featurenames to columns
   colnames(data) = fnamesNoBrackets
   
-  # read outcome file
-  outcomeDF = read.table(outcomefile)
+  # read activities file
+  activitiesDF = read.table(activitiesfile)
   
-  # apply activity levels to outcome factor
-  outcome = factor(outcomeDF[,1], levels=row.names(activities), labels=activities$activity)
+  # apply activity levels to activities factor
+  activity = factor(activitiesDF[,1], levels=row.names(activities), labels=activities$activity)
   
   # read subjects file
   subject = read.table(subjectfile)
   
   # append outcome and subject data to data
-  data$activity = outcome
+  data$activity = activity
   data$subject = subject[,1]
   
   data
