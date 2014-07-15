@@ -1,6 +1,6 @@
 # Code book
 
-This code book describes the fields that can be found in the output files of the [run_analysis.R](https://github.com/bartaelterman/datasci_getting_and_cleaning_data/blob/master/run_analysis.R) script. This script generates two files: [ucihar_tidy_data.txt]() and [average_data.txt]().
+This code book describes the fields that can be found in the output files of the [run_analysis.R](https://github.com/bartaelterman/datasci_getting_and_cleaning_data/blob/master/run_analysis.R) script. This script generates two files: [ucihar_tidy_data.txt](https://github.com/bartaelterman/datasci_getting_and_cleaning_data/blob/master/CodeBook.md#ucihar_tidy_datatxt) and [average_data.txt](https://github.com/bartaelterman/datasci_getting_and_cleaning_data/blob/master/CodeBook.md#average_datatxt).
 
 ## ucihar_tidy_data.txt
 
@@ -74,3 +74,7 @@ Note that all features are normalized and bounded within [-1, 1].
 - `fBodyGyroJerkMag.std`: Standard deviation of the fast fourier transformation of the magnitude of the three dimensional body angular velocity.
 - `activity`: activity that the subject was performing. Possibilities are: WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING or LAYING.
 - `subject`: the subject that was performing the activity. In total, data from 30 subjects was collected. These are labeled with a number from 1 to 30.
+
+## average_data.txt 
+
+This data file contains exactly the same columns as ucihar_tidy_data.txt. However, every feature is averaged per subject and activity.
